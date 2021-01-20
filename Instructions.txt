@@ -1,0 +1,13 @@
+Use 2 dimentional array to store teh sales data
+Use 1 dimentional array for the following:
+     hold the names of the stores
+     hold the names of the months
+     hold the total sales for each store (city)
+     hold the monthly totals
+declare all arrays as static class variables, before main method
+Creates and calls(from main()) 4 methods. These methods must be static.
+     initializes these arrays using the initialization lists: 2d array with all the sales data, store and months
+     Calculates the total sales for each city (declares the size of this array)
+     Calculates the monthly totals (and declares the size of this array)
+     Prints out the results (see the sample output below).  If you want help getting the output to line up, 
+          use printf (see the printf PowerPoint and/or the link below
