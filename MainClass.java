@@ -8,8 +8,8 @@
  public class MainClass{
      static String [] stores = {"Chilliwack", "Kamloops", "Kelowna", "Nanaimo", "Surrey", "Vancouver", "Victoria"};
      static String [] months = {"Jan", "Feb", "Mar", "Apr", "May", "June"};
-     static int [] monthTotals = new int [7];
-     static int [] storeTotals = new int [6];
+     static int [] monthTotals = new int [months.length];
+     static int [] storeTotals = new int [stores.length];
      static int [][] sales = {     {400, 500, 500, 600, 500, 600},
                                    {600, 800, 800, 800, 900, 900},
                                    {700, 700, 700, 900, 900, 1000},
@@ -19,7 +19,12 @@
                                    {900, 900, 900, 1000, 1100, 1100}};
 
      public static void main(String[] args){
-          monthTotals = methods.StoreTotals(stores, sales);
+          storeTotals = methods.StoreTotals(sales);
+          for(int i=0; i<storeTotals.length; i++){
+               System.out.println(storeTotals[i]);
+          }
+          System.out.println();
+          monthTotals = methods.MonthlyTotals(sales);
           for(int i=0; i<monthTotals.length; i++){
                System.out.println(monthTotals[i]);
           }

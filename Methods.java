@@ -13,24 +13,24 @@ public class methods {
           //return table;
      }
      
-     public static int[] StoreTotals(String[] Store,int[][] array){
+     public static int[] StoreTotals(int[][] array){
           int[] total = new int [array.length];
-          //String[] store = Store;
           int[][] myArray = array;
-          for(int i=0; i < myArray.length; i++){
-               for (int j=0; j< myArray[i].length; j++){
-                    total[i] = total[i] +myArray[i][j];
+          for(int row=0; row < myArray.length; row++){
+               for (int col=0; col< myArray[row].length; col++){
+                    total[row] = total[row] +myArray[row][col];
                }
           }
           return total;
      }
 
-     public static int MonthlyTotals(int[][] array){
-          int total = 0;
+     public static int[] MonthlyTotals(int[][] array){
+          int[] total = new int[array[0].length];
           int[][] myArray = array;
-          int arrLength = myArray.length;
-          for(int i=0; i < arrLength; i++){
-               total = total +myArray[i][0];
+          for(int row=0; row < myArray.length; row++){
+               for (int col=0; col< myArray[row].length; col++){
+                    total[col] = total[col] + myArray[row][col];
+               }
           }
           return total;
      }
