@@ -1,8 +1,7 @@
-import java.util.Scanner;
-import java.io.*;
-
 public class methods {
-     public static void Allinfo(String[] arr0, Integer[  ] arr1){
+
+     //WORK IN PROGRESS
+     public static void AllInfo(String[] arr0, Integer[  ] arr1){
           Object[][] table = {arr0, arr1};
           for(int row=0; row < table.length; row++){
                for(int col=0; col<table[row].length;col++){
@@ -14,45 +13,28 @@ public class methods {
           //return table;
      }
      
-     public static int totals(int[] array){
+     public static int StoreTotals(int[][] array){
           int total = 0;
-          int[] myArray = array;
+          int[][] myArray = array;
           int arrLength = myArray.length;
           for(int i=0; i < arrLength; i++){
-               total = total +myArray[i];
+               total = total +myArray[0][i];
           }
           return total;
      }
 
-     public static int monthlyTotals(int[] array){
+     public static int MonthlyTotals(int[][] array){
           int total = 0;
-          int[] myArray = array;
+          int[][] myArray = array;
           int arrLength = myArray.length;
           for(int i=0; i < arrLength; i++){
-               total = total +myArray[i];
+               total = total +myArray[i][0];
           }
           return total;
      }
 
-     public static void printOutput(){
+     public static void PrintOutput(){
           System.out.printf("hello\tthis is the final output\n");
           System.out.printf("total output\tmonths\ttotal sales");
-     }
-
-     public static void readString(String name){
-          System.out.println(new File(name).getAbsolutePath());
-          /*File file = new File("SampleData.txt");
-          Scanner scan = new Scanner(file);
-          String[] arr = new String[10];
-          int row = 0;
-          
-          while(scan.hasNextLine()){
-               while(scan.hasNext()){
-                    arr[row] = scan.next();
-                    row++;
-               }
-          }
-          scan.close();
-          return arr;*/
      }
 }
