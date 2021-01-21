@@ -13,12 +13,14 @@ public class methods {
           //return table;
      }
      
-     public static int StoreTotals(int[][] array){
-          int total = 0;
+     public static int[] StoreTotals(String[] Store,int[][] array){
+          int[] total = new int [array.length];
+          //String[] store = Store;
           int[][] myArray = array;
-          int arrLength = myArray.length;
-          for(int i=0; i < arrLength; i++){
-               total = total +myArray[0][i];
+          for(int i=0; i < myArray.length; i++){
+               for (int j=0; j< myArray[i].length; j++){
+                    total[i] = total[i] +myArray[i][j];
+               }
           }
           return total;
      }

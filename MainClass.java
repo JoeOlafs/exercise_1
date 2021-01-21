@@ -19,7 +19,9 @@
                                    {900, 900, 900, 1000, 1100, 1100}};
 
      public static void main(String[] args){
-          int total = methods.StoreTotals(sales);
-          System.out.println(total);
+          monthTotals = methods.StoreTotals(stores, sales);
+          for(int i=0; i<monthTotals.length; i++){
+               System.out.println(monthTotals[i]);
+          }
      }
 }
