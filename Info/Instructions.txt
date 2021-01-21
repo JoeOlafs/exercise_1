@@ -1,4 +1,4 @@
-Use 2 dimentional array to store teh sales data
+Use 2 dimentional array to store the sales data
 Use 1 dimentional array for the following:
      hold the names of the stores
      hold the names of the months
