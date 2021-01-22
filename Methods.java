@@ -1,6 +1,6 @@
 public class methods {
 
-     //WORK IN PROGRESS
+     // Initializes all arrays used in MainClass
      public static void Initialize(){
           MainClass.stores = new String[] {"Chilliwack", "Kamloops", "Kelowna", "Nanaimo", "Surrey", "Vancouver", "Victoria"};
           MainClass.months = new String[] {"Jan", "Feb", "Mar", "Apr", "May", "June"};
@@ -14,7 +14,7 @@ public class methods {
                                              {1000, 1100, 1200, 1300, 1400, 1400},
                                              {900, 900, 900, 1000, 1100, 1100}};
      }
-//READY     
+     // Calculates total sales from each store     
      public static int[] StoreTotals(int[][] array){
           int[] total = new int [array.length];
           int[][] myArray = array;
@@ -25,7 +25,7 @@ public class methods {
           }
           return total;
      }
-//READY
+     // Calculates the montly total sales
      public static int[] MonthlyTotals(int[][] array){
           int[] total = new int[array.length];
           int[][] myArray = array;
@@ -37,14 +37,10 @@ public class methods {
           }
           return total;
      }
-
+     // Formats and prints out a table with monthly sales
      public static void PrintOutput(){
-          /*String out = "Output";
-          String store = "Store";
-          String monthSale = "Monthly Sales";
-          */
           System.out.printf("%-15s\n", "Output:");
-          System.out.printf("%-30s%20s%21s\n", "Store", "Montly Sales ", "Store");
+          System.out.printf("%-30s%19s%22s\n", "Store", "Montly Sales ", "Store");
           System.out.printf("%-30s%20s%21s\n", "Location", "(Thousands of $)", "Totals");
           System.out.printf("%-15s","");
           for(int i = 0; i < MainClass.months.length; i++){
