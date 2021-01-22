@@ -12,7 +12,7 @@ public class methods {
           //System.out.println(table);
           //return table;
      }
-     
+//READY     
      public static int[] StoreTotals(int[][] array){
           int[] total = new int [array.length];
           int[][] myArray = array;
@@ -23,7 +23,7 @@ public class methods {
           }
           return total;
      }
-
+//READY
      public static int[] MonthlyTotals(int[][] array){
           int[] total = new int[array.length];
           int[][] myArray = array;
@@ -32,13 +32,7 @@ public class methods {
                     total[col] = total[col] + myArray[row][col];
                     total[6] = total[6] + myArray[row][col];
                }
-               //System.out.println(total[row]);
-               //total[6] = total[6] + total[row];
           }
-          /*for(int i=0; i<6; i++){
-               total[6] = total[6] + total[i];
-          }*/
-          System.out.println();
           return total;
      }
 
