@@ -14,9 +14,9 @@
      static int [][] sales;                             
 
      public static void main(String[] args){
-          methods.Initialize();
-          storeTotals = methods.StoreTotals(sales);
-          monthTotals = methods.MonthlyTotals(sales);
-          methods.PrintOutput();
+          Methods.Initialize();
+          storeTotals = Methods.StoreTotals(sales);
+          monthTotals = Methods.MonthlyTotals(sales);
+          Methods.PrintOutput();
      }
 }

@@ -4,7 +4,7 @@
  * Date: January 20, 2021
  * Program Description:  Methods used in MainClass
  ****/
-public class methods {
+public class Methods {
 
      // Initializes all arrays used in MainClass
      public static void Initialize(){
