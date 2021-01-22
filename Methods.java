@@ -1,3 +1,9 @@
+ /****    
+ * Name: Johannes Olafsson
+ * Student Number: T00629654   
+ * Date: January 20, 2021
+ * Program Description:  Methods used in MainClass
+ ****/
 public class methods {
 
      // Initializes all arrays used in MainClass
