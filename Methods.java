@@ -44,14 +44,24 @@ public class methods {
           String monthSale = "Monthly Sales";
           */
           System.out.printf("%-15s\n", "Output:");
-          System.out.printf("%-30s%20s%25s\n", "Store", "Montly Sales ", "Store");
-          System.out.printf("%-30s%20s%25s\n", "Location", "(Thousands of $)", "Totals");
-          System.out.printf("%15s","");
+          System.out.printf("%-30s%20s%21s\n", "Store", "Montly Sales ", "Store");
+          System.out.printf("%-30s%20s%21s\n", "Location", "(Thousands of $)", "Totals");
+          System.out.printf("%-15s","");
           for(int i = 0; i < MainClass.months.length; i++){
                System.out.printf("%8s", MainClass.months[i]);
           }
+          System.out.println();
           for(int i = 0; i < MainClass.stores.length; i++){
-               
+               System.out.printf("%-15s", MainClass.stores[i]);
+               for(int j = 0; j < MainClass.sales[i].length; j++){
+                    //System.out.println(MainClass.sales.length);
+                    System.out.printf("%8d", MainClass.sales[i][j]);
+               }
+               System.out.printf("%8d\n", MainClass.storeTotals[i]);
+          }
+          System.out.printf("%-15s","Month Totals");
+          for(int i = 0; i < MainClass.monthTotals.length; i++){
+               System.out.printf("%8d", MainClass.monthTotals[i]);
           }
      }
 }
