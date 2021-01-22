@@ -39,7 +39,19 @@ public class methods {
      }
 
      public static void PrintOutput(){
-          System.out.printf("hello\tthis is the final output\n");
-          System.out.printf("total output\tmonths\ttotal sales");
+          /*String out = "Output";
+          String store = "Store";
+          String monthSale = "Monthly Sales";
+          */
+          System.out.printf("%-15s\n", "Output:");
+          System.out.printf("%-30s%20s%25s\n", "Store", "Montly Sales ", "Store");
+          System.out.printf("%-30s%20s%25s\n", "Location", "(Thousands of $)", "Totals");
+          System.out.printf("%15s","");
+          for(int i = 0; i < MainClass.months.length; i++){
+               System.out.printf("%8s", MainClass.months[i]);
+          }
+          for(int i = 0; i < MainClass.stores.length; i++){
+               
+          }
      }
 }

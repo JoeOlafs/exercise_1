@@ -22,18 +22,20 @@
           methods.Initialize();
           storeTotals = methods.StoreTotals(sales);
           monthTotals = methods.MonthlyTotals(sales);
+          /*
           for(int i = 0; i < stores.length; i++){
                System.out.println(stores[i]);
           }
           for(int i = 0; i < months.length; i++){
                System.out.println(months[i]);
           }
-          for(int i = 0; i < storeTotals.length; i++){
+          for(int i = 0; i < storeTotals.length; i++){5
                System.out.println(storeTotals[i]);
           }
           for(int i = 0; i < monthTotals.length; i++){
                System.out.println(monthTotals[i]);
           }
+          */
           methods.PrintOutput();
      }
 }
