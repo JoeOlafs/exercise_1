@@ -20,13 +20,6 @@
 
      public static void main(String[] args){
           storeTotals = methods.StoreTotals(sales);
-          for(int i=0; i<storeTotals.length; i++){
-               System.out.println(storeTotals[i]);
-          }
-          System.out.println();
           monthTotals = methods.MonthlyTotals(sales);
-          for(int i=0; i<monthTotals.length; i++){
-               System.out.println(monthTotals[i]);
-          }
      }
 }

@@ -25,13 +25,20 @@ public class methods {
      }
 
      public static int[] MonthlyTotals(int[][] array){
-          int[] total = new int[array[0].length];
+          int[] total = new int[array.length];
           int[][] myArray = array;
           for(int row=0; row < myArray.length; row++){
-               for (int col=0; col< myArray[row].length; col++){
+               for (int col=0; col < myArray[row].length; col++){
                     total[col] = total[col] + myArray[row][col];
+                    total[6] = total[6] + myArray[row][col];
                }
+               //System.out.println(total[row]);
+               //total[6] = total[6] + total[row];
           }
+          /*for(int i=0; i<6; i++){
+               total[6] = total[6] + total[i];
+          }*/
+          System.out.println();
           return total;
      }
 
