@@ -1,6 +1,6 @@
 Output:
-Store 			              Monthly Sales	               Store
-Location		                  (thousands of $)		          Totals
+Store 			              Monthly Sales	               		Store
+Location		                  (thousands of $)		          		Totals
 		     Jan	     Feb       Mar       Apr       May       Jun	
 Chilliwack     400       500       500       600       500       600       3100 
 Kamloops	     600       800       800       800       900       900       4800 

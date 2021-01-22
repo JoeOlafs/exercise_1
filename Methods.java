@@ -1,16 +1,18 @@
 public class methods {
 
      //WORK IN PROGRESS
-     public static void AllInfo(String[] arr0, Integer[  ] arr1){
-          Object[][] table = {arr0, arr1};
-          for(int row=0; row < table.length; row++){
-               for(int col=0; col<table[row].length;col++){
-                    System.out.print(table[row][col]);
-               }
-               System.out.println();
-          }
-          //System.out.println(table);
-          //return table;
+     public static void Initialize(){
+          MainClass.stores = new String[] {"Chilliwack", "Kamloops", "Kelowna", "Nanaimo", "Surrey", "Vancouver", "Victoria"};
+          MainClass.months = new String[] {"Jan", "Feb", "Mar", "Apr", "May", "June"};
+          MainClass.storeTotals = new int[MainClass.stores.length];
+          MainClass.monthTotals = new int[MainClass.months.length];
+          MainClass.sales = new int[][] {    {400, 500, 500, 600, 500, 600},
+                                             {600, 800, 800, 800, 900, 900},
+                                             {700, 700, 700, 900, 900, 1000},
+                                             {500, 600, 700, 800, 700, 700},
+                                             {800, 700, 800, 700, 900, 800},
+                                             {1000, 1100, 1200, 1300, 1400, 1400},
+                                             {900, 900, 900, 1000, 1100, 1100}};
      }
 //READY     
      public static int[] StoreTotals(int[][] array){
